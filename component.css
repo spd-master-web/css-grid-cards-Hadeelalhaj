@@ -119,28 +119,26 @@ h2, p {
   width: 40px;
   height: auto;
   /* background-color: wheat; */
-  display: grid; 
-  grid-template-columns: 1fr 1fr;
-  grid-auto-rows: minmax(3px, auto);
-  grid-gap: 4px;
-  align-content: center;
+
 } 
 
-.card-symbol div {
-  background-color: black;
-}
-.card-symbol-full-width {
-  grid-column: 1/3;
-
-}
-/* .card-img {
-  margin: 0 auto;
-  display: block;
-  
-  position: relative;
+.card-symbol .gradiant {
+  background: linear-gradient(to left, black 25% 50%, white 50% 56%, black 25% 50% );
+  margin: 0 0 5px 0;
   width: 100%;
- 
-}  */
+  height: 4px;
+}
+
+
+div .card-symbol-full-width {
+  background-color: black;
+  margin: 0 0 8px 0;
+  width: 100%;
+  height: 4px;
+}
+
+
+
 
 .card-img {
   width: 100%;
