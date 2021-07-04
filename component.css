@@ -51,12 +51,10 @@ h2, p {
 
 /* CARD */
 .card {
-  padding: 2em;
-
-  display: flex;
-
+  position: relative;
 
   background-color: var(--background-color);
+ 
   border: .1rem solid var(--border-color);
   border-radius: 2rem;
 }
@@ -67,6 +65,12 @@ h2, p {
     flex-wrap: wrap;
   }
 }
+.first-part-wrapper {
+  padding: 2em 2em 0 2em;
+  display: flex;
+}
+
+
 
 /* card content */
 .card-content {
@@ -74,31 +78,81 @@ h2, p {
 }
 
 .card-title {
+ 
   font-size: 2em;
   font-weight: normal;
+  
 }
 
 .card-subtitle {
+  margin-bottom: 1em;
   text-transform: uppercase;
 }
 
 .card-description {
+  margin-bottom: 1em;
+  font-size: .9em;
 
 }
 
 /* card graphic */
 .card-graphic {
+  text-align: right;
   flex-basis: 20%;
   flex-shrink: 0;
+
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  align-items: center;
+
 }
 
 .card-number {
   font-size: 2em;
+  
 }
+
 
 .card-symbol {
+  margin: .6em auto;
+  width: 40px;
+  height: auto;
+  /* background-color: wheat; */
 
+} 
+
+.card-symbol .gradiant {
+  background: linear-gradient(to left, black 25% 50%, white 50% 56%, black 25% 50% );
+  margin: 0 0 5px 0;
+  width: 100%;
+  height: 4px;
 }
+
+
+div .card-symbol-full-width {
+  background-color: black;
+  margin: 0 0 8px 0;
+  width: 100%;
+  height: 4px;
+}
+
+
+
+
+.card-img {
+  width: 100%;
+  height: auto;
+  display: block;
+
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  
+  position: relative;
+  bottom: 0;
+}
+
+
 
 @media (max-width: 320px) {
   .card-graphic {
@@ -112,5 +166,10 @@ h2, p {
   .card-symbol {
     order: -1;
   }
+  /* .card-footer { 
+    height: 10em;
+  } */
 }
+
+
 
